@@ -1,23 +1,23 @@
 {
-  "ammo": "tacz:762x54", // 弹药类型，使用 5.56x45mm 弹药
-  "ammo_amount": 120, // 标准弹匣容量
+  "ammo": "tacz:762x39", // 弹药类型，使用 5.56x45mm 弹药
+  "ammo_amount": 75, // 标准弹匣容量
   "bolt": "open_bolt", // 枪机类型，使用开膛枪机
-  "rpm": 623, // 每分钟射速 (Rounds Per Minute)
+  "rpm": 660, // 每分钟射速 (Rounds Per Minute)
   "bullet": {
     "life": 1.0, // 子弹寿命，单位为秒
     "bullet_amount": 1, // 每次发射的子弹数量
-    "damage": 11.5, // 基础伤害
+    "damage": 11, // 基础伤害
     "tracer_count_interval": 1, // 曳光弹计数间隔（0表示不使用曳光弹）
     "extra_damage": {
-      "armor_ignore": 0.25, // 无视护甲的伤害比例
+      "armor_ignore": 0.05, // 无视护甲的伤害比例
       "head_shot_multiplier": 1.5, // 爆头伤害倍数
       "damage_adjust": [ // 根据距离调整伤害
-        {"distance": 30, "damage": 11.59},
-        {"distance": 80, "damage": 10.5},
-        {"distance": "infinite", "damage": 10} // 无穷远距离的伤害
+        {"distance": 30, "damage": 11},
+        {"distance": 80, "damage": 9.5},
+        {"distance": "infinite", "damage": 9} // 无穷远距离的伤害
       ]
     },
-    "speed": 240, // 子弹速度
+    "speed": 270, // 子弹速度
     "gravity": 0.0245, // 子弹重力影响，越大下坠越快
     "knockback": 0, // 击退效果
     "friction": 0.01, // 空气摩擦力
@@ -39,7 +39,7 @@
   "put_away_time": 0.67, 
   "aim_time": 0.35, 
   "sprint_time": 0.2,
-  "weight": 11.7,
+  "weight": 5,
   "fire_mode": [
     "auto"
   ],

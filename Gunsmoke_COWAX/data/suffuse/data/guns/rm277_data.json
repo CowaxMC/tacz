@@ -1,13 +1,13 @@
 {
-  "ammo": "suffuse:6.8tvcm",
+  "ammo": "tacz:308",
   "ammo_amount": 20,
   "extended_mag_ammo_amount": [
-    30,
-    30,
-    30
+    22,
+    25,
+    28
   ],
   "bolt": "closed_bolt",
-  "rpm": 700,
+  "rpm": 610,
   "bullet": {
     "life": 1.8,
     "bullet_amount": 1,

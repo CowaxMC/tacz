@@ -1,34 +1,34 @@
 {
   // 指定枪械弹药
-  "ammo": "tacz:57x28",
+  "ammo": "tacz:9mm",
   // 弹容
-  "ammo_amount": 1000,
+  "ammo_amount": 50,
   // 扩容弹夹弹药总数
   "extended_mag_ammo_amount": [
-    34,
-    37,
-    40
+    60,
+    70,
+    85
   ],
   // 枪栓类型：开膛待机（open_bolt）、闭膛待击（closed_bolt）、手动上膛（manual_action)
   "bolt": "closed_bolt",
   // 每分钟射出弹药量，最大不应超过 1200
-  "rpm": 850,
+  "rpm": 830,
   // 子弹实体属性
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 10000,
+    "damage": 7,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.7,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 25, "damage": 1000},
-        {"distance": 55, "damage": 1},
-        {"distance": "infinite", "damage": 6.6}
+        {"distance": 25, "damage": 5.5},
+        {"distance": 55, "damage": 5.5},
+        {"distance": "infinite", "damage": 4.5}
       ]
     },
-    "speed": 240,
+    "speed": 360,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.02,
@@ -58,7 +58,7 @@
   // 瞄准时长，单位秒。
   "aim_time": 0.2,
   "sprint_time": 0.2,
-  "weight": 3.4,
+  "weight": 2.4,
   // 拉栓上膛的时间，仅当枪栓类型为 manual_action 时有效
   // "bolt_action_time": 0.9,
   // 开火模式

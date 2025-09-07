@@ -1,25 +1,25 @@
 {
-  "ammo": "suffuse:6x35mm",
-  "ammo_amount": 30,
+  "ammo": "tacz:556x45",
+  "ammo_amount": 20,
   "extended_mag_ammo_amount": [
-    40,
-    50,
-    60
+    28,
+    32,
+    34
   ],
   "bolt": "closed_bolt",
-  "rpm": 720,
+  "rpm": 650,
   "bullet": {
     "life": 1.75,
     "bullet_amount": 1,
-    "damage": 7,
+    "damage": 4.5,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 30, "damage": 7},
-        {"distance": 70, "damage": 6},
-        {"distance": "infinite", "damage": 6}
+        {"distance": 30, "damage": 4.5},
+        {"distance": 70, "damage": 4},
+        {"distance": "infinite", "damage": 3.5}
       ]
     },
     "speed": 265,

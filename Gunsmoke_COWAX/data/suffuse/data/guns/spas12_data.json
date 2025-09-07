@@ -1,13 +1,13 @@
 {
   "ammo": "tacz:12g",
-  "ammo_amount": 5,
+  "ammo_amount": 6,
   "extended_mag_ammo_amount": [
-    5,
-    5,
-    5
+    6,
+    6,
+    6
   ],
   "bolt": "manual_action",
-  "rpm": 180,
+  "rpm": 280,
   "bullet": {
     "life": 0.6,
     "bullet_amount": 9,
@@ -15,7 +15,7 @@
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
-      "head_shot_multiplier": 1.33,
+      "head_shot_multiplier": 1.40,
       "damage_adjust": [
         {"distance": 18, "damage": 36},
         {"distance": 32, "damage": 27},

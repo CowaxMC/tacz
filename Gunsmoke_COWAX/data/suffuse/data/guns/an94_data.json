@@ -1,11 +1,11 @@
 {
-  "ammo": "suffuse:545x39",
+  "ammo": "tacz:9mm",
   "script": "suffuse:an94",
-  "rpm": 625,
+  "rpm": 670,
   "bullet": {
     "life": 0.6,
     "bullet_amount": 1,
-    "damage": 8.5,
+    "damage": 3,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.15,
@@ -13,15 +13,15 @@
       "damage_adjust": [
         {
           "distance": 30,
-          "damage": 8
+          "damage": 3
         },
         {
           "distance": 60.5,
-          "damage": 7
+          "damage": 2.6
         },
         {
           "distance": "infinite",
-          "damage": 6
+          "damage": 2.5
         }
       ]
     },

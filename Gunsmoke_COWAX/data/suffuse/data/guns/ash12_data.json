@@ -1,10 +1,10 @@
 {
-  "ammo": "suffuse:12.7x55",
+  "ammo": "tacz:308",
   "rpm": 630,
   "bullet": {
     "life": 1.6,
     "bullet_amount": 1,
-    "damage": 35,
+    "damage": 18,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.15,
@@ -12,30 +12,30 @@
       "damage_adjust": [
         {
           "distance": 30,
-          "damage": 35
+          "damage": 18
         },
         {
           "distance": 80,
-          "damage": 30
+          "damage": 20
         },
         {
           "distance": "infinite",
-          "damage": 29
+          "damage": 22
         }
       ]
     },
-    "speed": 230,
-    "gravity": 0.0245,
+    "speed": 300,
+    "gravity": 0.15,
     "knockback": 0,
     "friction": 0.012,
     "ignite": false,
     "pierce": 1
   },
-  "ammo_amount": 10,
+  "ammo_amount": 15,
   "extended_mag_ammo_amount": [
-    15,
+    18,
     20,
-    30
+    24
   ],
   "bolt": "closed_bolt",
   "reload": {

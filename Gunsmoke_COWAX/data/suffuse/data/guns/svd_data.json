@@ -1,28 +1,28 @@
 {
-  "ammo": "tacz:762x54",
-  "ammo_amount": 10,
+  "ammo": "tacz:762x39",
+  "ammo_amount": 13,
   "extended_mag_ammo_amount": [
-    12,
-    15,
+    16,
+    18,
     20
   ],
   "bolt": "closed_bolt",
-  "rpm": 160,
+  "rpm": 180,
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 13,
+    "damage": 14,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
       "head_shot_multiplier": 2,
       "damage_adjust": [
-        {"distance": 55, "damage": 13},
-        {"distance": 130, "damage": 12},
-        {"distance": "infinite", "damage": 7}
+        {"distance": 55, "damage": 18},
+        {"distance": 130, "damage": 17},
+        {"distance": "infinite", "damage": 17}
       ]
     },
-    "speed": 300,
+    "speed": 350,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.0125,
