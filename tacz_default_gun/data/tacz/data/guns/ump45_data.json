@@ -1,18 +1,18 @@
 {
   "ammo": "tacz:45acp",
-  "rpm": 660,
+  "rpm": 675,
   "bullet": {
     "life": 0.55,
     "bullet_amount": 1,
-    "damage": 9,
+    "damage": 3.5,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.2,
+      "armor_ignore": 0,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 30, "damage": 9},
-        {"distance": 55, "damage": 7},
-        {"distance": "infinite", "damage": 5.5}
+        {"distance": 30, "damage": 3.5},
+        {"distance": 55, "damage": 3.2},
+        {"distance": "infinite", "damage": 2.8}
       ]
     },
     "speed": 190,
@@ -22,10 +22,10 @@
     "ignite": false,
     "pierce": 1
   },
-  "ammo_amount": 25,
+  "ammo_amount": 28,
   "extended_mag_ammo_amount": [
-    32,
-    40,
+    36,
+    42,
     48
   ],
   "bolt": "closed_bolt",
@@ -46,7 +46,7 @@
   "sprint_time": 0.15,
   "weight": 2.65,
   "movement_speed": {
-    "base": 0.0,
+    "base": 0.1,
     "aim": -0.1,
     "reload": 0
   },
@@ -70,22 +70,22 @@
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [0.5, 0.5]},
-      {"time": 0.2, "value": [0.5, 0.5]},
-      {"time": 0.55, "value": [-0.15, -0.15]},
+      {"time": 0, "value": [0.4, 0.4]},
+      {"time": 0.2, "value": [0.4, 0.4]},
+      {"time": 0.55, "value": [-0.12, -0.12]},
       {"time": 0.7, "value": [0, 0]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.2, 0.15]},
-      {"time": 0.3, "value": [-0.2, 0.15]},
+      {"time": 0, "value": [-0.15, 0.1]},
+      {"time": 0.3, "value": [-0.15, 0.1]},
       {"time": 0.55, "value": [0, 0]}
     ]
   },
   "inaccuracy": {
-    "stand": 3.25,
-    "move": 4,
-    "sneak": 2,
-    "lie": 1.25,
+    "stand": 2.25,
+    "move": 3,
+    "sneak": 2.75,
+    "lie": 2.2,
     "aim": 0.2
   },
   // 近战相关

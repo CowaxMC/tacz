@@ -14,7 +14,7 @@
     "damage": 12,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.5,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
         {"distance": 35, "damage": 12},
@@ -83,10 +83,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 5,
-    "move": 5.5,
-    "sneak": 3,
-    "lie": 2,
+    "stand": 6,
+    "move": 7.5,
+    "sneak": 5.5,
+    "lie": 5,
     "aim": 0.1
   },
   // 近战相关
@@ -117,8 +117,7 @@
     "stock",
     "grip",
     "muzzle",
-    "extended_mag",
-    "laser"
+    "extended_mag"
   ],
   "exclusive_attachments": {
   }

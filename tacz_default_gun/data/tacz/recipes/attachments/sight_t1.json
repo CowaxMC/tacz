@@ -5,18 +5,6 @@
         "tag": "forge:ingots/iron"
       },
       "count": 4
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/redstone"
-      },
-      "count": 1
-    },
-    {
-      "item": {
-        "tag": "forge:glass"
-      },
-      "count": 1
     }
   ],
   "result": {

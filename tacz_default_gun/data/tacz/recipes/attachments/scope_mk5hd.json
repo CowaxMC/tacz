@@ -4,23 +4,11 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 24
+      "count": 18
     },
     {
       "item": {
-        "tag": "forge:gems/amethyst"
-      },
-      "count": 10
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/glowstone"
-      },
-      "count": 8
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/redstone"
+        "tag": "forge:ingots/gold"
       },
       "count": 8
     }

@@ -4,18 +4,18 @@
   "bullet": {
     "life": 1,
     "bullet_amount": 1,
-    "damage": 11,
+    "damage": 4.3,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.2,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 18, "damage": 11},
-        {"distance": 40, "damage": 7},
-        {"distance": "infinite", "damage": 5}
+        {"distance": 18, "damage": 4.3},
+        {"distance": 40, "damage": 4},
+        {"distance": "infinite", "damage": 3.5}
       ]
     },
-    "speed": 170,
+    "speed": 190,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.035,
@@ -46,7 +46,7 @@
   "sprint_time": 0.05,
   "weight": 1.2,
   "movement_speed": {
-    "base": 0,
+    "base": 0.15,
     "aim": 0,
     "reload": 0.1
   },
@@ -60,9 +60,9 @@
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [2.75, 2.75]},
-      {"time": 0.04, "value": [1.75, 1.75]},
-      {"time": 0.08, "value": [2.25, 2.25]},
+      {"time": 0, "value": [2.95, 2.95]},
+      {"time": 0.04, "value": [1.95, 1.95]},
+      {"time": 0.08, "value": [2.45, 2.45]},
       {"time": 0.27, "value": [0.1, 0.1]},
       {"time": 0.3, "value": [0.08, 0.08]},
       {"time": 0.55, "value": [0, 0]}

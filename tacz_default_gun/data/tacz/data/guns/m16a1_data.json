@@ -14,7 +14,7 @@
     "damage": 7,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.25,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
         {"distance": 30, "damage": 7},
@@ -77,8 +77,8 @@
   "inaccuracy": {
     "stand": 3.75,
     "move": 4.5,
-    "sneak": 2.5,
-    "lie": 1.75,
+    "sneak": 3.25,
+    "lie": 4,
     "aim": 0.1
   },
   // 近战相关

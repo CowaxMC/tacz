@@ -4,18 +4,6 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 26
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/gold"
-      },
-      "count": 12
-    },
-    {
-      "item": {
-        "tag": "forge:gems/lapis"
-      },
       "count": 12
     }
   ],

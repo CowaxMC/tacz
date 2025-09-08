@@ -4,13 +4,7 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 10
-    },
-    {
-      "item": {
-        "tag": "forge:gems/amethyst"
-      },
-      "count": 2
+      "count": 5
     }
   ],
   "result": {

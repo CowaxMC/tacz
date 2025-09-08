@@ -11,15 +11,15 @@
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 16,
+    "damage": 11,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.5,
-      "head_shot_multiplier": 1.75,
+      "armor_ignore": 0.0,
+      "head_shot_multiplier": 1.25,
       "damage_adjust": [
-        {"distance": 60, "damage": 16},
-        {"distance": 120, "damage": 13.5},
-        {"distance": "infinite", "damage": 10.5}
+        {"distance": 60, "damage": 11},
+        {"distance": 120, "damage": 10},
+        {"distance": "infinite", "damage": 9}
       ]
     },
     "speed": 310,
@@ -77,10 +77,9 @@
   },
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [1.75, 1.85]},
-      {"time": 0.05, "value": [1.25, 1.25]},
-      {"time": 0.12, "value": [1.5, 1.5]},
-      {"time": 0.25, "value": [-0.15, -0.1]},
+      {"time": 0, "value": [1.75, 1.75]},
+      {"time": 0.05, "value": [1.75, 1.75]},
+      {"time": 0.25, "value": [-0.35, -0.25]},
       {"time": 0.5, "value": [0, 0]},
       {"time": 0.7, "value": [0.15, 0.25]},
       {"time": 0.9, "value": [0, 0]}
@@ -92,10 +91,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 5.5,
-    "move": 6,
-    "sneak": 3,
-    "lie": 2,
+    "stand": 6,
+    "move": 7.5,
+    "sneak": 5.25,
+    "lie": 5,
     "aim": 0.05
   },
   // 近战相关
@@ -126,8 +125,7 @@
     "stock",
     "grip",
     "muzzle",
-    "extended_mag",
-    "laser"
+    "extended_mag"
   ],
   "exclusive_attachments": {
   }

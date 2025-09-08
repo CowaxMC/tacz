@@ -14,7 +14,7 @@
     "damage": 36,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.25,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1.33,
       "damage_adjust": [
         {"distance": 18, "damage": 36},
@@ -83,7 +83,7 @@
     "stand": 3.65,
     "move": 3.7,
     "sneak": 3.65,
-    "lie": 3.5,
+    "lie": 3.65,
     "aim": 3.5
   },
   "melee": {

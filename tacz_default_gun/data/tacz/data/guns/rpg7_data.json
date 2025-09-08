@@ -20,7 +20,7 @@
     "explosion": {
       "explode": true,
       "damage": 120,
-      "radius": 3,
+      "radius": 5,
       "knockback": true,
       "destroy_block": true,
       "delay": 30
@@ -48,7 +48,6 @@
     "reload": -0.2
   },
   "crawl_recoil_multiplier": 0.5,
-  "can_slide": false,
   "fire_mode": [
     "semi"
   ],
@@ -68,7 +67,7 @@
   },
   "inaccuracy": {
     "stand": 3,
-    "move": 4,
+    "move": 8,
     "sneak": 2,
     "lie": 1.5,
     "aim": 0.25
