@@ -1,0 +1,19 @@
+{
+  "weight": 0.4,
+  "ads": {
+    "addend": 0.06
+  },
+  "damage": {
+    "multiplier": 0.91
+  },
+  "inaccuracy": {
+    "multiplier": 0.8
+  },
+  "effective_range": {
+    "multiplier": 1.25
+  },
+  "silence": {
+    "distance_addend": -24,
+    "use_silence_sound": true
+  }
+}

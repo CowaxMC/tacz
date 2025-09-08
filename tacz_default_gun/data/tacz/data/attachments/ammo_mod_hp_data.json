@@ -1,0 +1,15 @@
+{
+  "weight": 0.6,
+  "ads": {
+
+    "addend": 0.02
+  },
+  "damage": {
+    "multiplier": 1.14
+  },
+  "ammo_speed": {
+    "multiplier": 0.7
+  },
+
+  "extended_mag_level": 1
+}

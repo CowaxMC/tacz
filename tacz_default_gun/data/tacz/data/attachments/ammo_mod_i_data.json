@@ -1,0 +1,21 @@
+{
+  "weight": 0.6,
+  "ads": {
+    
+    "addend": 0.02
+  },
+  "ignite": {
+    "entity": true
+  },
+  "armor_ignore": {
+    "multiplier": 0.8
+  },
+  "damage": {
+    "multiplier": 1.1
+  },
+  "ammo_speed": {
+    "multiplier": 1.0
+  },
+  
+  "extended_mag_level": 3
+}
