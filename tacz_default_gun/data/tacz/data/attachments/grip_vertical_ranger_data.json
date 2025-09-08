@@ -1,6 +1,7 @@
 {
   "weight": 0.8,
   "ads": {
+    // 加数（多个配件的数值相加，作为第一个乘区）
     "multiplier": 1.05
   },
   "inaccuracy": {
@@ -11,10 +12,10 @@
   },
   "recoil": {
     "pitch": {
-      "multiplier": 0.75
+      "multiplier": 0.8
     },
     "yaw": {
-      "multiplier": 0.65
+      "multiplier": 0.7
     }
   }
 }

@@ -11,7 +11,7 @@
       "armor_ignore": 0.0,
       "head_shot_multiplier": 1.0
     },
-    "speed": 80,
+    "speed": 60,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.05,
@@ -19,7 +19,7 @@
     "pierce": 0,
     "explosion": {
       "explode": true,
-      "damage": 120,
+      "damage": 50,
       "radius": 6,
       "knockback": true,
       "delay": 30
@@ -81,11 +81,11 @@
       // 动画类型：没有枪托的为 melee_push，有枪托的为 melee_stock
       "animation_type": "melee_stock",
       // 刺刀距离参数，枪械里还有个刺刀攻击距离参数，两者做加和
-      "distance": 1.5,
+      "distance": 1,
       // 刺刀范围角度
       "range_angle": 30,
       // 伤害值
-      "damage": 5,
+      "damage": 2,
       // 击退效果
       "knockback": 0.75,
       // 前摇时长，单位：秒

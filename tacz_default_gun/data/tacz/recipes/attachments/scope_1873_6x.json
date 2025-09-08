@@ -2,15 +2,21 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "forge:ingots/copper"
       },
-      "count": 2
+      "count":16
     },
     {
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 10
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:glass"
+      },
+      "count": 4
     }
   ],
   "result": {

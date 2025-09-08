@@ -1,5 +1,5 @@
 {
-  "ammo": "tacz:762x39",
+  "ammo": "tacz:45_70",
   "bolt": "open_bolt",
   "ammo_amount": 1,
   "extended_mag_ammo_amount": [
@@ -9,23 +9,23 @@
   ],
   "rpm": 90,
   "bullet": {
-    "life": 1.8,
+    "life": 0.8,
     "bullet_amount": 1,
-    "damage": 15,
+    "damage": 35,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
-      "head_shot_multiplier": 1.4,
+      "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 40, "damage": 15},
-        {"distance": 64, "damage": 14.5},
-        {"distance": 88, "damage": 14},
-        {"distance": "infinite", "damage": 13}
+        {"distance": 40, "damage": 35},
+        {"distance": 64, "damage": 28},
+        {"distance": 88, "damage": 19},
+        {"distance": "infinite", "damage": 16}
       ]
     },
-    "speed": 165,
-    "gravity": 0.03,
-    "knockback": 0,
+    "speed": 233,
+    "gravity": 0.15,
+    "knockback": 0.25,
     "friction": 0.02,
     "ignite": false,
     "pierce": 1
@@ -36,12 +36,12 @@
     // 弹匣供弹换弹时长（秒），到达此时间点，服务端就更新枪内子弹数量
     "feed": {
       // 空仓换弹
-      "empty": 2.9
+      "empty": 2.1
     },
     // 弹匣供弹总时长（秒），到达此时间点，枪械才可以进行开火、检视等行为。
     "cooldown": {
       // 空仓换弹
-      "empty": 3.5
+      "empty": 2.5
     }
   },
   "draw_time": 0.45,
@@ -52,7 +52,7 @@
   "weight": 3.5,
   "movement_speed": {
     // 默认修正
-    "base": -0.04,
+    "base": 0.0,
     // 瞄准时
     "aim": -0.5,
     // 换弹时
@@ -64,12 +64,12 @@
   ],
  "recoil": {
     "pitch": [
-      {"time": 0, "value": [4.5, 4.5]},
-      {"time": 0.07, "value": [3.5, 3.5]},
-      {"time": 0.16, "value": [3.7, 3.7]},
-      {"time": 0.24, "value": [1.9, 1.9]},
-      {"time": 0.6, "value": [-0.6, -0.6]},
-      {"time": 0.71, "value": [0.35, 0.35]},
+      {"time": 0, "value": [4, 4]},
+      {"time": 0.07, "value": [2.5, 2.5]},
+      {"time": 0.16, "value": [3.5, 3.5]},
+      {"time": 0.24, "value": [1.85, 1.85]},
+      {"time": 0.6, "value": [-0.5, -0.5]},
+      {"time": 0.71, "value": [0.25, 0.25]},
       {"time": 0.83, "value": [0, 0]},
       {"time": 0.88, "value": [0, 0]}
     ],
