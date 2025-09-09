@@ -11,15 +11,15 @@
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 43,
+    "damage": 20,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.50,
-      "head_shot_multiplier": 1.5,
+      "armor_ignore": 0.30,
+      "head_shot_multiplier": 2,
       "damage_adjust": [
         {
           "distance": 50,
-          "damage": 43
+          "damage": 20
         },
         {
           "distance": "infinite",
@@ -50,7 +50,7 @@
   "aim_time": 0.19,
   "sprint_time": 0.2,
   "bolt_action_time": 0.9,
-  "weight": 6.5,
+  "weight": 4.5,
   "movement_speed": {
     // 默认修正
     "base": 0.0,
