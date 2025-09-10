@@ -35,9 +35,9 @@
       "put_away": "tacz:m4a1/m4a1_put_away",
       "dry_fire": "suffuse:dryfire/lmg_dry_fire",
       "silence": "suffuse:ash12/ash12fire_sup",
-      "flesh_hit": "suffuse:hitsounds/hit_indication",
-      "head_hit": "suffuse:hitsounds/hit_marker",
-      "kill": "suffuse:hitsounds/killsound",
+      "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
       "silence_3p": "suffuse:ash12/ash12fire_sup"
     },
     "offhand_show": {

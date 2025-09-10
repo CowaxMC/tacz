@@ -1,8 +1,0 @@
-{
-  "name": "suffuse.gun.axmc.name",
-  "tooltip": "suffuse.gun.axmc.desc",
-  "display": "suffuse:axmc_display",
-  "data": "suffuse:axmc_data",
-  "type": "sniper",
-  "sort": 5
-}

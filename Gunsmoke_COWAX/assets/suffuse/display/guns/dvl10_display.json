@@ -28,9 +28,9 @@
     "silence_3p": "suffuse:m200/m200_silence",
     "dry_fire": "suffuse:dryfire/rifle_dry_fire",
     "bolt": "suffuse:dvl10/dvl_bolt",
-    "flesh_hit": "suffuse:hitsounds/hit_indication",
-    "head_hit": "suffuse:hitsounds/hit_marker",
-    "kill": "suffuse:hitsounds/killsound",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
     "put_away": "suffuse:dvl10/dvl_put_away"
   },
   "offhand_show": {

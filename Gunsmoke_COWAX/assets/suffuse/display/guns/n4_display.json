@@ -30,10 +30,10 @@
     "draw": "tacz:m4a1/m4a1_draw",
     "put_away": "tacz:m4a1/m4a1_put_away",
     "silence": "suffuse:n4/n4_silence",
-    "flesh_hit": "suffuse:hitsounds/hit_indication",
     "dry_fire": "suffuse:dryfire/carbine_dry_fire",
-    "head_hit": "suffuse:hitsounds/hit_marker",
-    "kill": "suffuse:hitsounds/killsound",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
     "silence_3p": "suffuse:n4/n4_silence"
   },
   "offhand_show": {

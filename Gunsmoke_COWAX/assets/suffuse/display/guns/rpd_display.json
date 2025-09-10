@@ -29,9 +29,9 @@
     "dry_fire": "suffuse:dryfire/lmg_dry_fire",
     "put_away": "tacz:m249/m249_put_away",
     "silence": "tacz:m249/m249_silence_3p",
-    "flesh_hit": "suffuse:hitsounds/hit_indication",
-    "head_hit": "suffuse:hitsounds/hit_marker",
-    "kill": "suffuse:hitsounds/killsound",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
     "silence_3p": "tacz:m249/m249_silence_3p"
   },
   "offhand_show": {

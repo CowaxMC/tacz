@@ -34,9 +34,9 @@
     "dry_fire": "suffuse:dryfire/pistol_dry_fire",
     "shoot_3p": "suffuse:tec9/tec9_shoot",
     "silence": "tacz:cz75/cz75_silence",
-    "flesh_hit": "suffuse:hitsounds/hit_indication",
-    "head_hit": "suffuse:hitsounds/hit_marker",
-    "kill": "suffuse:hitsounds/killsound",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
     "silence_3p": "tacz:cz75/cz75_silence_3p"
   },
   "offhand_show": {

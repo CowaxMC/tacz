@@ -35,9 +35,9 @@
     "shoot_3p": "suffuse:mas38/mas38_shoot",
     "dry_fire": "suffuse:dryfire/smg_dry_fire",
     "silence": "tacz:cz75/cz75_silence",
-    "flesh_hit": "suffuse:hitsounds/hit_indication",
-    "head_hit": "suffuse:hitsounds/hit_marker",
-    "kill": "suffuse:hitsounds/killsound",
+"head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
     "silence_3p": "tacz:cz75/cz75_silence_3p"
   },
   "offhand_show": {
