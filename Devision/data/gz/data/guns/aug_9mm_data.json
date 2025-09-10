@@ -1,33 +1,33 @@
 {
   "ammo": "tacz:9mm",
-  "ammo_amount": 25,
+  "ammo_amount": 35,
   "extended_mag_ammo_amount": [
-    35,
+    40,
     45,
     55
   ],
   "bolt": "closed_bolt",
-  "rpm": 720,
+  "rpm": 750,
   "bullet": {
     "life": 0.75,
     "bullet_amount": 1,
-    "damage": 7.8,
+    "damage": 11,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.25,
-      "head_shot_multiplier": 1.5,
+      "armor_ignore": 0.3,
+      "head_shot_multiplier": 2,
       "damage_adjust": [
         {
           "distance": 22,
-          "damage": 7.8
+          "damage": 11
         },
         {
           "distance": 42,
-          "damage": 6.8
+          "damage": 10.5
         },
         {
           "distance": "infinite",
-          "damage": 5.8
+          "damage": 10
         }
       ]
     },
@@ -58,7 +58,7 @@
   // 重量，枪械的总重将影响“移速属性”，默认-1.5%移动速度/kg，可在ServerConfig中调整
   // 调整的属性会作为“百分比增加”类型(MULTIPLY_BASE)的属性修饰器添加至实体上
   // 注意，移速属性并不能直接反应实际移速，此属性对实际移速的影响较为复杂，请自行查阅相关资料
-  "weight": 3.1,
+  "weight": 2.5,
   // 额外移速修正，多种情况同时满足时，仅计算最后一个修正
   // 对于其中的每个情况，最终的修正值是枪械和所有配件该情况下修正值的和
   // 调整的属性将作为“最终乘算”类型(MULTIPLY_TOTAL)的属性修饰器添加至实体上

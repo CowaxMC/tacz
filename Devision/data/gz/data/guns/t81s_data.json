@@ -10,7 +10,7 @@
     60
   ],
   // 枪栓类型：开膛待机（open_bolt）、闭膛待击（closed_bolt）、手动上膛（manual_action)
-  "bolt": "closed_bolt",
+  "bolt": "manual_action",
   // 每分钟射出弹药量，最大不应超过 1200
   "rpm": 700,
   // 子弹实体属性
@@ -95,22 +95,10 @@
   // "bolt_action_time": 0.9,
   // 开火模式
   "fire_mode": [
-    // 全自动
-    "auto",
     // 半自动
     "semi"
   ],
   // 多连续发数据，仅多连发会调用
-  "burst_data": {
-    // 是否连续射击
-    "continuous_shoot": true,
-    // 连发数
-    "count": 3,
-    // 组内连发的射速
-    "bpm": 900,
-    // 每组连发之间的时间间隔（上一组结束时间到下一组开始的时间间隔），单位秒
-    "min_interval": 0.3
-  },
   // 后坐力
   "recoil": {
     "pitch": [
