@@ -1,6 +1,6 @@
 {
   "ammo": "tacz:50ae",
-  "rpm": 150,
+  "rpm": 290,
   "bullet": {
     "life": 0.7,
     "bullet_amount": 1,
@@ -8,7 +8,7 @@
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
-      "head_shot_multiplier": 1.50,
+      "head_shot_multiplier": 1.70,
       "damage_adjust": [
         {"distance": 20, "damage": 15},
         {"distance": 49, "damage": 15},
@@ -16,7 +16,7 @@
         {"distance": "infinite", "damage": 14.5}
       ]
     },
-    "speed": 170,
+    "speed": 370,
     "gravity": 0.0245,
     "knockback": 0,
     "friction": 0.012,
@@ -51,6 +51,7 @@
   ],
   "allow_attachment_types": [
     "scope"
+    "grip"
   ],
   "recoil": {
     "pitch": [
@@ -71,6 +72,6 @@
     "move": 5,
     "sneak": 3.5,
     "lie": 2.5,
-    "aim": 0.3
+    "aim": 0.01
   }
 }
