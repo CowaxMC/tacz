@@ -1,0 +1,341 @@
+
+["Vehicle Configs for VVP"]
+	#Maximum energy for Typhoon vehicle
+	#Range: 1 ~ 10000000
+	typhoon_max_energy = 6500
+	#Health points for Typhoon vehicle
+	#Range: 1 ~ 10000000
+	typhoon_hp = 250
+	#Energy cost for Typhoon vehicle
+	#Range: > 0
+	typhoon_energy_cost = 128
+	#Energy multiplier for Typhoon vehicle
+	#Range: 0.01 ~ 1.0
+	typhoon_energy_multiplier = 0.1
+	#Shooting cost for Typhoon vehicle
+	#Range: 1 ~ 1000
+	typhoon_shoot_cost = 10
+	#Deprecated, use datapack to change this value instead
+	#Range: 1 ~ 10000000
+	mi_24_hp = 250
+	#The max energy cost of MI-24 per tick
+	#Range: > 0
+	mi_24_max_energy_cost = 228
+	#Deprecated, use datapack to change this value instead
+	#Range: > 0
+	mi_24_max_energy = 5000000
+	#The min energy cost of MI-24 per tick
+	#Range: > 0
+	mi_24_min_energy_cost = 64
+	#The cannon damage of MI-24
+	#Range: 1 ~ 10000000
+	mi_24_cannon_damage = 25
+	#The cannon explosion damage of MI-24
+	#Range: 1 ~ 10000000
+	mi_24_cannon_explosion_damage = 13
+	#The cannon explosion radius of MI-24
+	#Range: 1.0 ~ 1.0E7
+	mi_24_cannon_explosion_radius = 4.0
+	#The rocket damage of MI-24
+	#Range: 1 ~ 10000000
+	mi_24_rocket_damage = 80
+	#The rocket explosion damage of MI-24
+	#Range: 1 ~ 10000000
+	mi_24_rocket_explosion_damage = 40
+	#The rocket explosion radius of MI-24
+	#Range: 1 ~ 10000000
+	mi_24_rocket_explosion_radius = 5
+	#The cannon damage of Stryker M1128
+	#Range: 1 ~ 10000000
+	stryker_m1128_cannon_damage = 1
+	#The cannon explosion damage of Stryker M1128
+	#Range: 1 ~ 10000000
+	stryker_m1128_cannon_explosion_damage = 1
+	#The cannon explosion radius of Stryker M1128
+	#Range: 1.0 ~ 1.0E7
+	stryker_m1128_cannon_explosion_radius = 100.0
+	#Whether to destroy the block when cannon of MI-24 hits a block
+	mi_24_cannon_destroy = true
+	#Energy cost for Bradley Ukrainian vehicle
+	#Range: > 0
+	bradley_ukr_energy_cost = 128
+	#Energy cost for BTR-4 vehicle
+	#Range: > 0
+	btr4_energy_cost = 128
+	#Energy cost for BTR-80A vehicle
+	#Range: > 0
+	btr80a_energy_cost = 128
+	#Energy cost for BTR-80A-1 vehicle
+	#Range: > 0
+	btr80a_1_energy_cost = 128
+	#Energy cost for Cobra helicopter
+	#Range: > 0
+	cobra_energy_cost = 228
+	#Energy cost for Cobra Shark helicopter
+	#Range: > 0
+	cobra_shark_energy_cost = 228
+	#Energy cost for F-35 aircraft
+	#Range: > 0
+	f35_energy_cost = 256
+	#Energy cost for M997 vehicle
+	#Range: > 0
+	m997_energy_cost = 128
+	#Energy cost for M997 Green vehicle
+	#Range: > 0
+	m997_green_energy_cost = 128
+	#Energy cost for Mi-24 helicopter
+	#Range: > 0
+	mi24_energy_cost = 228
+	#Energy cost for Mi-24 Polish helicopter
+	#Range: > 0
+	mi24pol_energy_cost = 228
+	#Energy cost for Mi-24 Ukrainian helicopter
+	#Range: > 0
+	mi24ukr_energy_cost = 228
+	#Energy cost for Stryker-1 vehicle
+	#Range: > 0
+	stryker_1_energy_cost = 2700
+	#Energy cost for Stryker vehicle
+	#Range: > 0
+	stryker_energy_cost = 2700
+	#Energy cost for Stryker-1 Haki vehicle
+	#Range: > 0
+	stryker_1_haki_energy_cost = 2700
+	#Energy cost for Stryker Haki vehicle
+	#Range: > 0
+	stryker_haki_energy_cost = 2700
+	#Energy cost for Terminator vehicle
+	#Range: > 0
+	terminator_energy_cost = 128
+	#Energy cost for Terminator Haki vehicle
+	#Range: > 0
+	terminator_haki_energy_cost = 128
+	#Energy cost for UH-60 Mod helicopter
+	#Range: > 0
+	uh60mod_energy_cost = 228
+	#Energy cost for UH-60 Mod Civilian helicopter
+	#Range: > 0
+	uh60mod_civilian_energy_cost = 228
+	#UH-60 Mod Civilian helicopter speed configurations
+	#Range: 0.1 ~ 10.0
+	uh60mod_civilian_turn_speed_x = 0.8
+	#Range: 0.1 ~ 10.0
+	uh60mod_civilian_turn_speed_y = 1.2
+	#Range: 0.01 ~ 5.0
+	uh60mod_civilian_turn_speed_y_ground = 0.05
+	#Range: 0.1 ~ 10.0
+	uh60mod_civilian_turn_speed_y_air = 1.2
+	#Range: 1.0 ~ 20.0
+	uh60mod_civilian_turn_limit = 6.0
+	#Range: 0.01 ~ 1.0
+	uh60mod_civilian_max_power = 0.08
+	#Range: 1.0E-4 ~ 0.01
+	uh60mod_civilian_power_gain_rate = 5.0E-4
+	#Range: 0.01 ~ 1.0
+	uh60mod_civilian_mouse_sensitivity = 0.1
+	#Range: 0.01 ~ 1.0
+	uh60mod_civilian_mouse_speed_x = 0.25
+	#Range: 0.01 ~ 1.0
+	uh60mod_civilian_mouse_speed_y = 0.15
+	#Bradley Ukrainian vehicle damage configurations
+	#Range: 1 ~ 10000000
+	bradley_ukr_cannon_damage = 14.5
+	#Range: 1 ~ 10000000
+	bradley_ukr_cannon_explosion_damage = 2
+	#Range: 1.0 ~ 1.0E7
+	bradley_ukr_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	bradley_ukr_machine_gun_damage = 5.5
+	#Range: 1 ~ 10000000
+	bradley_ukr_missile_damage = 20
+	#Range: 1 ~ 10000000
+	bradley_ukr_missile_explosion_damage = 5
+	#Range: 1.0 ~ 1.0E7
+	bradley_ukr_missile_explosion_radius = 2.0
+	#BTR-4 vehicle damage configurations
+	#Range: 1 ~ 10000000
+	btr4_cannon_damage = 13
+	#Range: 1 ~ 10000000
+	btr4_cannon_explosion_damage = 2
+	#Range: 1.0 ~ 1.0E7
+	btr4_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	btr4_machine_gun_damage = 5.5
+	#Range: 1 ~ 10000000
+	btr4_missile_damage = 20
+	#Range: 1 ~ 10000000
+	btr4_missile_explosion_damage = 40
+	#Range: 1.0 ~ 1.0E7
+	btr4_missile_explosion_radius = 5.0
+	#BTR-80A vehicle damage configurations
+	#Range: 1 ~ 10000000
+	btr80a_cannon_damage = 25
+	#Range: 1 ~ 10000000
+	btr80a_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	btr80a_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	btr80a_machine_gun_damage = 9.5
+	#BTR-80A-1 vehicle damage configurations
+	#Range: 1 ~ 10000000
+	btr80a_1_cannon_damage = 25
+	#Range: 1 ~ 10000000
+	btr80a_1_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	btr80a_1_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	btr80a_1_machine_gun_damage = 9.5
+	#Cobra helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	cobra_cannon_damage = 25.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_cannon_explosion_damage = 13.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_rocket_explosion_radius = 5.0
+	#Cobra Shark helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_cannon_damage = 25.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_cannon_explosion_damage = 13.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	cobra_shark_rocket_explosion_radius = 5.0
+	#F-35 aircraft damage configurations
+	#Range: 1 ~ 10000000
+	f35_cannon_damage = 25
+	#Range: 1 ~ 10000000
+	f35_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	f35_cannon_explosion_radius = 4.0
+	#Range: 1 ~ 10000000
+	f35_rocket_damage = 80
+	#Range: 1 ~ 10000000
+	f35_rocket_explosion_damage = 40
+	#Range: 1.0 ~ 1.0E7
+	f35_rocket_explosion_radius = 5.0
+	#M997 vehicle damage configurations
+	#Range: 1.0 ~ 1.0E7
+	m997_machine_gun_damage = 9.5
+	#M997 Green vehicle damage configurations
+	#Range: 1.0 ~ 1.0E7
+	m997_green_machine_gun_damage = 9.5
+	#Mi-24 helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	mi24_cannon_damage = 25.0
+	#Range: 1.0 ~ 1.0E7
+	mi24_cannon_explosion_damage = 13.0
+	#Range: 1.0 ~ 1.0E7
+	mi24_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	mi24_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	mi24_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	mi24_rocket_explosion_radius = 5.0
+	#Mi-24 Polish helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_cannon_damage = 25.0
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_cannon_explosion_damage = 13.0
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	mi24pol_rocket_explosion_radius = 5.0
+	#Mi-24 Ukrainian helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_cannon_damage = 25.0
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_cannon_explosion_damage = 13.0
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	mi24ukr_rocket_explosion_radius = 5.0
+	#Stryker-1 vehicle damage configurations
+	#Range: 1 ~ 10000000
+	stryker_1_cannon_damage = 13
+	#Range: 1 ~ 10000000
+	stryker_1_cannon_explosion_damage = 2
+	#Range: 1.0 ~ 1.0E7
+	stryker_1_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	stryker_1_machine_gun_damage = 9.5
+	#Stryker vehicle damage configurations
+	#Range: 1.0 ~ 1.0E7
+	stryker_machine_gun_damage = 9.5
+	#Range: 1 ~ 10000000
+	stryker_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	stryker_cannon_explosion_radius = 2.0
+	#Stryker-1 Haki vehicle damage configurations
+	#Range: 1 ~ 10000000
+	stryker_1_haki_cannon_damage = 25
+	#Range: 1 ~ 10000000
+	stryker_1_haki_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	stryker_1_haki_cannon_explosion_radius = 1.0
+	#Range: 1.0 ~ 1.0E7
+	stryker_1_haki_machine_gun_damage = 9.5
+	#Stryker Haki vehicle damage configurations
+	#Range: 1.0 ~ 1.0E7
+	stryker_haki_machine_gun_damage = 9.5
+	#Range: 1 ~ 10000000
+	stryker_haki_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	stryker_haki_cannon_explosion_radius = 4.0
+	#Terminator vehicle damage configurations
+	#Range: 1 ~ 10000000
+	terminator_cannon_damage = 12.5
+	#Range: 1 ~ 10000000
+	terminator_cannon_explosion_damage = 3
+	#Range: 1.0 ~ 1.0E7
+	terminator_cannon_explosion_radius = 2.0
+	#Range: 1.0 ~ 1.0E7
+	terminator_machine_gun_damage = 9.5
+	#Range: 1 ~ 10000000
+	terminator_missile_damage = 20
+	#Range: 1 ~ 10000000
+	terminator_missile_explosion_damage = 4
+	#Range: 1.0 ~ 1.0E7
+	terminator_missile_explosion_radius = 5.0
+	#Terminator Haki vehicle damage configurations
+	#Range: 1 ~ 10000000
+	terminator_haki_cannon_damage = 25
+	#Range: 1 ~ 10000000
+	terminator_haki_cannon_explosion_damage = 13
+	#Range: 1.0 ~ 1.0E7
+	terminator_haki_cannon_explosion_radius = 4.0
+	#Range: 1.0 ~ 1.0E7
+	terminator_haki_machine_gun_damage = 9.5
+	#Range: 1 ~ 10000000
+	terminator_haki_missile_damage = 80
+	#Range: 1 ~ 10000000
+	terminator_haki_missile_explosion_damage = 40
+	#Range: 1.0 ~ 1.0E7
+	terminator_haki_missile_explosion_radius = 5.0
+	#UH-60 Mod helicopter damage configurations
+	#Range: 1.0 ~ 1.0E7
+	uh60mod_rocket_damage = 80.0
+	#Range: 1.0 ~ 1.0E7
+	uh60mod_rocket_explosion_damage = 40.0
+	#Range: 1.0 ~ 1.0E7
+	uh60mod_rocket_explosion_radius = 5.0
+
