@@ -27,7 +27,7 @@ jobs:
         
     - name: Send Release Notification
       env:
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python -c "
@@ -38,7 +38,7 @@ jobs:
         
         # Получение данных о релизе
         github_event_path = os.getenv('GITHUB_EVENT_PATH')
-        webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+        webhook_url = os.getenv('DISCORD_WEBHOOK')
         
         if not github_event_path or not webhook_url:
             print('Не найдены необходимые переменные окружения')
