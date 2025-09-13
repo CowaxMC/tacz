@@ -52,81 +52,36 @@ jobs:
         repository = event_data.get('repository', {})
         action = event_data.get('action', 'published')
         
-        # Создание embed
-        embed = {
-            'title': f'🚀 {action.title()} Release: {release.get(\"name\", \"Unnamed Release\")}',
-            'description': release.get('body', 'Описание отсутствует'),
-            'color': 0x00ff00,
-            'url': release.get('html_url', ''),
-            'timestamp': release.get('published_at', release.get('created_at', datetime.now().isoformat())),
-            'footer': {
-                'text': f'Repository: {repository.get(\"full_name\", \"Unknown\")}'
-            },
-            'author': {
-                'name': release.get('author', {}).get('login', 'Unknown'),
-                'url': release.get('author', {}).get('html_url', ''),
-                'icon_url': release.get('author', {}).get('avatar_url', '')
-            },
-            'fields': []
-        }
-        
-        # Добавление полей
-        if release.get('tag_name'):
-            embed['fields'].append({
-                'name': '📦 Tag',
-                'value': release['tag_name'],
-                'inline': True
-            })
-        
-        if release.get('author', {}).get('login'):
-            embed['fields'].append({
-                'name': '👤 Author',
-                'value': release['author']['login'],
-                'inline': True
-            })
-        
-        if release.get('created_at'):
-            created_date = release['created_at'][:10]
-            embed['fields'].append({
-                'name': '📅 Created',
-                'value': created_date,
-                'inline': True
-            })
+        # Создание текстового сообщения
+        release_name = release.get('name', 'Unnamed Release')
+        release_url = release.get('html_url', '')
+        release_body = release.get('body', 'Описание отсутствует')
+        tag_name = release.get('tag_name', '')
+        author = release.get('author', {}).get('login', 'Unknown')
+        repository_name = repository.get('full_name', 'Unknown')
         
         # Статус релиза
-        status_fields = []
+        status_parts = []
         if release.get('prerelease', False):
-            status_fields.append('Pre-release')
+            status_parts.append('Pre-release')
         if release.get('draft', False):
-            status_fields.append('Draft')
+            status_parts.append('Draft')
+        status_text = f' ({", ".join(status_parts)})' if status_parts else ''
         
-        if status_fields:
-            embed['fields'].append({
-                'name': '⚠️ Status',
-                'value': ' | '.join(status_fields),
-                'inline': True
-            })
-        
-        # Информация об ассетах
-        assets = release.get('assets', [])
-        if assets:
-            asset_info = []
-            for asset in assets[:5]:
-                size = asset.get('size', 0)
-                size_mb = size / (1024 * 1024)
-                asset_info.append(f'• [{asset[\"name\"]}]({asset[\"browser_download_url\"]}) ({size_mb:.1f} MB)')
-            
-            embed['fields'].append({
-                'name': '📁 Downloads',
-                'value': '\n'.join(asset_info),
-                'inline': False
-            })
+        # Формирование сообщения
+        message = f"""🚀 **{release_name}**{status_text}
+
+{release_body}
+
+**📦 Tag:** {tag_name}
+**👤 Author:** {author}
+**🔗 Repository:** {repository_name}
+
+{release_url}"""
         
         # Отправка уведомления
         payload = {
-            'embeds': [embed],
-            'username': 'GitHub Release Bot',
-            'avatar_url': 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+            'content': message
         }
         
         try:
