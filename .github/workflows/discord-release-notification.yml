@@ -2,11 +2,7 @@ name: Discord Notify
 
 on:
   release:
-    types: [published, edited, prereleased, released]
-  push:
-    tags:
-      - 'v*'
-      - 'release-*'
+    types: [published]
 
 jobs:
   notify-discord:
@@ -69,11 +65,12 @@ jobs:
         status_text = f' ({\", \".join(status_parts)})' if status_parts else ''
         
         # Формирование сообщения
-        message = (f\"🚀 **{release_name}**{status_text}\\n\\n\"
+        message = (f\"# **{release_name}**{status_text}\\n\"
+                 f\"----------------------------------------------\\n\\n\"
                  f\"{release_body}\\n\\n\"
-                 f\"**📦 Tag:** {tag_name}\\n\"
-                 f\"**👤 Author:** {author}\\n\"
-                 f\"**🔗 Repository:** {repository_name}\\n\\n\"
+                 f\"**📦 Версия:** {tag_name}\\n\"
+                 f\"**👤 Автор:** {author}\\n\"
+                 f\"**🔗 Репозиторий:** {repository_name}\\n\\n\"
                  f\"{release_url}\")
         
         # Отправка уведомления
