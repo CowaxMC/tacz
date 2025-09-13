@@ -1,0 +1,139 @@
+name: Discord Notify
+
+on:
+  release:
+    types: [published, edited, prereleased, released]
+  push:
+    tags:
+      - 'v*'
+      - 'release-*'
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests
+        
+    - name: Send Release Notification
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        python -c "
+        import requests
+        import json
+        import os
+        from datetime import datetime
+        
+        # Получение данных о релизе
+        github_event_path = os.getenv('GITHUB_EVENT_PATH')
+        webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+        
+        if not github_event_path or not webhook_url:
+            print('Не найдены необходимые переменные окружения')
+            exit(1)
+        
+        # Чтение данных события
+        with open(github_event_path, 'r', encoding='utf-8') as f:
+            event_data = json.load(f)
+        
+        release = event_data.get('release', {})
+        repository = event_data.get('repository', {})
+        action = event_data.get('action', 'published')
+        
+        # Создание embed
+        embed = {
+            'title': f'🚀 {action.title()} Release: {release.get(\"name\", \"Unnamed Release\")}',
+            'description': release.get('body', 'Описание отсутствует'),
+            'color': 0x00ff00,
+            'url': release.get('html_url', ''),
+            'timestamp': release.get('published_at', release.get('created_at', datetime.now().isoformat())),
+            'footer': {
+                'text': f'Repository: {repository.get(\"full_name\", \"Unknown\")}'
+            },
+            'author': {
+                'name': release.get('author', {}).get('login', 'Unknown'),
+                'url': release.get('author', {}).get('html_url', ''),
+                'icon_url': release.get('author', {}).get('avatar_url', '')
+            },
+            'fields': []
+        }
+        
+        # Добавление полей
+        if release.get('tag_name'):
+            embed['fields'].append({
+                'name': '📦 Tag',
+                'value': release['tag_name'],
+                'inline': True
+            })
+        
+        if release.get('author', {}).get('login'):
+            embed['fields'].append({
+                'name': '👤 Author',
+                'value': release['author']['login'],
+                'inline': True
+            })
+        
+        if release.get('created_at'):
+            created_date = release['created_at'][:10]
+            embed['fields'].append({
+                'name': '📅 Created',
+                'value': created_date,
+                'inline': True
+            })
+        
+        # Статус релиза
+        status_fields = []
+        if release.get('prerelease', False):
+            status_fields.append('Pre-release')
+        if release.get('draft', False):
+            status_fields.append('Draft')
+        
+        if status_fields:
+            embed['fields'].append({
+                'name': '⚠️ Status',
+                'value': ' | '.join(status_fields),
+                'inline': True
+            })
+        
+        # Информация об ассетах
+        assets = release.get('assets', [])
+        if assets:
+            asset_info = []
+            for asset in assets[:5]:
+                size = asset.get('size', 0)
+                size_mb = size / (1024 * 1024)
+                asset_info.append(f'• [{asset[\"name\"]}]({asset[\"browser_download_url\"]}) ({size_mb:.1f} MB)')
+            
+            embed['fields'].append({
+                'name': '📁 Downloads',
+                'value': '\n'.join(asset_info),
+                'inline': False
+            })
+        
+        # Отправка уведомления
+        payload = {
+            'embeds': [embed],
+            'username': 'GitHub Release Bot',
+            'avatar_url': 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+        }
+        
+        try:
+            response = requests.post(webhook_url, json=payload)
+            response.raise_for_status()
+            print('✅ Уведомление успешно отправлено в Discord')
+        except Exception as e:
+            print(f'❌ Ошибка при отправке уведомления: {e}')
+            exit(1)
+        "
