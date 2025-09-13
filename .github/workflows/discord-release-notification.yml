@@ -69,15 +69,12 @@ jobs:
         status_text = f' ({", ".join(status_parts)})' if status_parts else ''
         
         # Формирование сообщения
-        message = f\"\"\"🚀 **{release_name}**{status_text}
-
-{release_body}
-
-**📦 Tag:** {tag_name}
-**👤 Author:** {author}
-**🔗 Repository:** {repository_name}
-
-{release_url}\"\"\"
+        message = (f\"🚀 **{release_name}**{status_text}\\n\\n\"
+                 f\"{release_body}\\n\\n\"
+                 f\"**📦 Tag:** {tag_name}\\n\"
+                 f\"**👤 Author:** {author}\\n\"
+                 f\"**🔗 Repository:** {repository_name}\\n\\n\"
+                 f\"{release_url}\")
         
         # Отправка уведомления
         payload = {
