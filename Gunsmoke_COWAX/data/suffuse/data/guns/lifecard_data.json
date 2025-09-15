@@ -16,7 +16,7 @@
         {"distance": "infinite", "damage": 4}
       ]
     },
-    "speed": 220,
+    "speed": 340,
     "gravity": 0.05,
     "knockback": 0,
     "friction": 0.012,
@@ -63,6 +63,6 @@
     "move": 11.5,
     "sneak": 0.5,
     "lie": 1.8,
-    "aim": 2.45
+    "aim": 0.15
   }
 }
