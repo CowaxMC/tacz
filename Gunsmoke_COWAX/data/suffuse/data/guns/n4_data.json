@@ -17,10 +17,10 @@
       "armor_ignore": 0.15,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 30, "damage": 7},
-        {"distance": 60, "damage": 6.5},
+        {"distance": 30, "damage": 8},
+        {"distance": 60, "damage": 7},
         {"distance": 120, "damage": 6},
-        {"distance": "infinite", "damage": 6}
+        {"distance": "infinite", "damage": 5}
       ]
     },
     "speed": 300,
@@ -74,7 +74,7 @@
     "move": 6,
     "sneak": 4.5,
     "lie": 4,
-    "aim": 0.34
+    "aim": 0.15
   },
   "melee": {
     "distance": 1,

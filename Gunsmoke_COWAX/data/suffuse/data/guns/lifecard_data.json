@@ -7,8 +7,8 @@
     "damage": 4,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.1,
-      "head_shot_multiplier": 7,
+      "armor_ignore": 0.12,
+      "head_shot_multiplier": 7.5,
       "damage_adjust": [
         {"distance": 15.5, "damage": 4},
         {"distance": 24.5, "damage": 4},

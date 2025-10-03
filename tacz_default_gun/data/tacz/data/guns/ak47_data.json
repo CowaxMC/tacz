@@ -37,7 +37,7 @@
         {"distance": 25, "damage": 8.5},
         {"distance": 55, "damage": 8},
         // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
-        {"distance": "infinite", "damage": 7.5}
+        {"distance": "infinite", "damage": 7}
       ]
     },
     // 速度 m/s

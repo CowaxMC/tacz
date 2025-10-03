@@ -70,10 +70,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 8.25,
+    "stand": 6,
     "move": 6.85,
-    "sneak": 5.5,
-    "lie": 3.7,
-    "aim": 2.8
+    "sneak": 4.5,
+    "lie": 2.7,
+    "aim": 1.3
   }
 }

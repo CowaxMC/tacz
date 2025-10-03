@@ -1,6 +1,6 @@
 {
   "ammo": "tacz:762x39",
-  "ammo_amount": 7,
+  "ammo_amount": 6,
   "extended_mag_ammo_amount": [
     10,
     12,
@@ -17,12 +17,12 @@
       "armor_ignore": 0.15,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
-        {"distance": 80, "damage": 14},
-        {"distance": 150, "damage": 13},
-        {"distance": "infinite", "damage": 13}
+        {"distance": 80, "damage": 12},
+        {"distance": 150, "damage": 11},
+        {"distance": "infinite", "damage": 10}
       ]
     },
-    "speed": 300,
+    "speed": 350,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.0125,
@@ -52,7 +52,7 @@
   "aim_time": 0.25,
   "sprint_time": 0.2,
   "bolt_action_time": 1.15,
-  "weight": 4.5,
+  "weight": 4,
   "fire_mode": [
     "semi"
   ],

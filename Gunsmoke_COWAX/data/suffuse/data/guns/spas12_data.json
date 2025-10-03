@@ -2,9 +2,9 @@
   "ammo": "tacz:12g",
   "ammo_amount": 6,
   "extended_mag_ammo_amount": [
-    6,
-    6,
-    6
+    7,
+    9,
+    11
   ],
   "bolt": "manual_action",
   "rpm": 280,
@@ -14,15 +14,15 @@
     "damage": 36,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.25,
-      "head_shot_multiplier": 1.40,
+      "armor_ignore": 0.15,
+      "head_shot_multiplier": 1.50,
       "damage_adjust": [
         {"distance": 18, "damage": 36},
-        {"distance": 32, "damage": 27},
-        {"distance": "infinite", "damage": 18}
+        {"distance": 32, "damage": 30},
+        {"distance": "infinite", "damage": 23}
       ]
     },
-    "speed": 150,
+    "speed": 250,
     "gravity": 0.15,
     "knockback": 0.15,
     "friction": 0.05,
@@ -88,7 +88,7 @@
     "move": 3.7,
     "sneak": 3.65,
     "lie": 3.65,
-    "aim": 3.5
+    "aim": 3
   },
   "melee": {
     "distance": 1.25,

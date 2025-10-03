@@ -7,8 +7,8 @@
     "damage": 7,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.0,
-      "head_shot_multiplier": 1.25,
+      "armor_ignore": 0,
+      "head_shot_multiplier": 1.4,
       "damage_adjust": [
         {"distance": 15, "damage": 7},
         {"distance": 36, "damage": 5.5},
@@ -16,7 +16,7 @@
         {"distance": "infinite", "damage": 3.5}
       ]
     },
-    "speed": 150,
+    "speed": 250,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.02,
