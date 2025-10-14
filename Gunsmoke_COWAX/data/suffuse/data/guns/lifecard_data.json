@@ -17,7 +17,7 @@
       ]
     },
     "speed": 340,
-    "gravity": 0.05,
+    "gravity": 0.001,
     "knockback": 0,
     "friction": 0.012,
     "ignite": false,
@@ -59,10 +59,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 0.2,
-    "move": 11.5,
-    "sneak": 0.5,
-    "lie": 1.8,
-    "aim": 0.15
+    "stand": 0.1,
+    "move": 0.1,
+    "sneak": 0.1,
+    "lie": 0.1,
+    "aim": 0.01
   }
 }
